@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title></title>
+    <link href="Content\bootstrap.css" rel="stylesheet" />
+    <script src="Content\bootstrp.min.css"></script>
+   
+</head>
+<body>
+    <h1 style="background-color:burlywood;font-style:initial;font-family:'Comic Sans MS';text-align:center">FastEase Order</h1>
+
+    <form method="post" action="/Home/takeOrder">
+        Type <select style="color:black">
+            <option value="b">Burger</option>
+            <option value="p">Pizza</option>
+            <option value="m">More</option>
+            <option value="d">Deal</option>
+        </select>
+        Name<select>
+            <option value="Rockstar">Rockstar</option>
+            <option value="p">Pizza</option>
+            <option value="m">More</option>
+            <option value="d">Deal</option>
+        </select><br />
+        Quantity<input type="text" name="q"/><br />
+        <input type="submit" />
+    </form>
+
+</body>
