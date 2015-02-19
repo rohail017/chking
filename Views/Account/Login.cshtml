@@ -7,6 +7,7 @@
 <h2>@ViewBag.Title.</h2>
 <div class="row">
     <div class="col-md-8">
+        @ViewBag.action
         <section id="loginForm">
             @using (Html.BeginForm("LoginUser", "Home",FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
